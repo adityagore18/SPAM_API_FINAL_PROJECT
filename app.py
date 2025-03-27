@@ -56,10 +56,8 @@ def predict():
    vector_input=vectorizer.transform([transformed_msg])
    print(vector_input)
    res=model.predict(vector_input)[0]
-   ans='Not Spam'
-   if(res==1):
-      ans='Spam'
-   result={'msg':msg,'result':ans}
+    
+   result={'msg':msg,'result':str(res)}
 
    return jsonify(result)
 
