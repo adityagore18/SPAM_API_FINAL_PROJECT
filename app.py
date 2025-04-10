@@ -14,8 +14,11 @@ print("flask:",flask.__version__)
 print("nltk:",nltk.__version__)
  
 
-model =pickle.load(open('model_final.pkl','rb'))
-vectorizer =pickle.load(open('vectorizer_final.pkl','rb'))
+model =pickle.load(open('nb_model.pkl','rb'))
+vectorizer =pickle.load(open('vectorizer.pkl','rb'))
+
+# model =pickle.load(open('model_final.pkl','rb'))
+# vectorizer =pickle.load(open('vectorizer_final.pkl','rb'))
  
 def transform_text (text):
      
